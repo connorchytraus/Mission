@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Mission 4 Website!</title>
+    <!-- bootstrap link here -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- my info is here -->
+    <h1>Connor Chytraus</h1>
+    <img src="img/Connor.JPG" alt="Connor" width="300" />
+    <p>
+        I hope to get a lot out of my IS 413 class this semester. I want to learn
+        more about ASP.NET and how to work with it in websites and other useful scenarios.
+        This is my favorite class in the semester #2 of the junior core so far!
+    </p>
+    <!-- my future jobs -->
+    <ul>
+        <li>fullstack developer</li>
+        <li>cybersecurity analyst</li>
+        <li>consultant</li>
+    </ul>
+    <!-- grade calculator here sends info over to Grades.js-->
+    <h2>Grade Calculator</h2>
+    <form>
+        <label>50% Assignments:</label>
+        <input id="assignment" /><br />
+        <label>10% Group Project:</label>
+        <input id="group" /><br />
+        <label>10% Quizzes:</label>
+        <input id="quiz" /><br />
+        <label>10% Midterm Exam:</label>
+        <input id="mid" /><br />
+        <label>10% Final Exam:</label>
+        <input id="final" /><br />
+        <label>10% INTEX:</label>
+        <input id="intex" /><br />
+        <input id="buttonCalc" type="button" value="Calculate Grade" />
+        <br />
+        <output id="grade">Final Grade:</output>
+    </form>
+
+    <!-- bootstrap and jquery files -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/Grades.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+</body>
+</html>
