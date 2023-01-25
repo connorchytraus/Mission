@@ -5,7 +5,7 @@ $("#buttonCalc").click(function () {
     let total = ($("#assignment").val() * 0.5) + ($("#group").val() * 0.1) + ($("#quiz").val() * 0.1) + ($("#mid").val() * 0.1)
         + ($("#final").val() * 0.1) + ($("#intex").val() * 0.1);
 
-    let grade = "tbd"
+    let grade = "tbd";
 
     //determines final letter grade
     if (total >= 94) {
@@ -46,5 +46,5 @@ $("#buttonCalc").click(function () {
     }
 
     //returns final grade to ouput of the form
-    write(grade);
+    window.print(grade);
 })
