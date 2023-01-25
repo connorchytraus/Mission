@@ -1,6 +1,4 @@
-﻿const { write } = require("@popperjs/core");
-
-$("#buttonCalc").click(function () {
+﻿$("#buttonCalc").click(function () {
     // calculate final grade from index.html form
     let total = ($("#assignment").val() * 0.5) + ($("#group").val() * 0.1) + ($("#quiz").val() * 0.1) + ($("#mid").val() * 0.1)
         + ($("#final").val() * 0.1) + ($("#intex").val() * 0.1);
@@ -46,5 +44,6 @@ $("#buttonCalc").click(function () {
     }
 
     //returns final grade to ouput of the form
-    window.print(grade);
+    print(grade);
+    print(total);
 })
