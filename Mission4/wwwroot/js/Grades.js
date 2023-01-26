@@ -1,7 +1,7 @@
 ﻿$("#buttonCalc").click(function () {
     // calculate final grade from index.html form
-    let total = ($("#assignment").val() * 1) + ($("#group").val()*1) + ($("#quiz").val()*1) + ($("#mid").val()*1)
-        + ($("#final").val()*1) + ($("#intex").val()*1);
+    let total = ($("#assignment").val() * 0.5) + ($("#group").val()*0.1) + ($("#quiz").val()*0.1) + ($("#mid").val()*0.1)
+        + ($("#final").val()*0.1) + ($("#intex").val()*0.1);
 
     let grade = "tbd";
 
