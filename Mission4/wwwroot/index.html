@@ -12,39 +12,57 @@
 </head>
 <body>
     <!-- my info is here -->
-    <h1>Connor Chytraus</h1>
-    <img src="img/Connor.JPG" alt="Connor" width="300" />
-    <p>
-        I hope to get a lot out of my IS 413 class this semester. I want to learn
-        more about ASP.NET and how to work with it in websites and other useful scenarios.
-        This is my favorite class in the semester #2 of the junior core so far!
-    </p>
+    <h1 class="row justify-content-center">Connor Chytraus</h1>
+    <br />
+    <img class="rounded mx-auto d-block" src="img/Connor.JPG" alt="Connor" width="300" />
+    <br />
+    <div class="container-md">
+        <p class="px-md-5">
+            I hope to get a lot out of my IS 413 class this semester. I want to learn
+            more about ASP.NET and how to work with it in websites and other useful scenarios.
+            This is my favorite class in the semester #2 of the junior core so far! These are some of the jobs
+            I am considering after graduating:
+        </p>
+    </div>
+    <br />
     <!-- my future jobs -->
-    <ul>
-        <li>fullstack developer</li>
-        <li>cybersecurity analyst</li>
-        <li>consultant</li>
-    </ul>
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-primary justify-content-center">fullstack developer</li>
+            <li class="list-group-item list-group-item-secondary">cybersecurity analyst</li>
+            <li class="list-group-item list-group-item-success">consultant</li>
+        </ul>
+    </div>
+    <br />
     <!-- grade calculator here sends info over to Grades.js-->
-    <h2>Grade Calculator</h2>
-    <p>Enter Grades as a % (75% would be entered as 75)</p>
-    <form>
-        <label>50% Assignments:</label>
-        <input id="assignment" /><br />
-        <label>10% Group Project:</label>
-        <input id="group" /><br />
-        <label>10% Quizzes:</label>
-        <input id="quiz" /><br />
-        <label>10% Midterm Exam:</label>
-        <input id="mid" /><br />
-        <label>10% Final Exam:</label>
-        <input id="final" /><br />
-        <label>10% INTEX:</label>
-        <input id="intex" /><br />
-        <input id="buttonCalc" type="button" value="Calculate Grade" />
-        <br />
-        <output id="grade">Final Grade: </output>
-    </form>
+    <div class="container-md">
+        <h2 class="row justify-content-center">Grade Calculator</h2>
+        <p class="text-md-center">Enter Grades as a % (75% would be entered as 75)</p>
+        <div class="container-sm text-center">
+            <div class="form-group">
+                <form>
+                    <label class="col-form-label">50% Assignments:</label>
+                    <input id="assignment" placeholder="%"/><br />
+                    <label class="col-form-label">10% Group Project:</label>
+                    <input id="group" placeholder="%" /><br />
+                    <label class="col-form-label">10% Quizzes:</label>
+                    <input id="quiz" placeholder="%" /><br />
+                    <label class="col-form-label">10% Midterm Exam:</label>
+                    <input id="mid" placeholder="%"/><br />
+                    <label class="col-form-label">10% Final Exam:</label>
+                    <input id="final" placeholder="%"/><br />
+                    <label class="col-form-label">10% INTEX:</label>
+                    <input id="intex" placeholder="%"/><br />
+                    <br />
+                    <input id="buttonCalc" type="button" class="btn btn-primary" value="Calculate Grade" />
+                    <br />
+                    <output id="grade">Final Grade: </output>
+                    <br />
+                    <br />
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- bootstrap and jquery files -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
