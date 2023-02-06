@@ -21,9 +21,9 @@ namespace Mission4.Controllers
         }
 
         [HttpPost]
-        public IActionResult GradCalc(GradeCalcModel model)
+        public IActionResult GradeCalc(GradeCalcModel model)
         {
-            return View(model);
+            return View();
         }
     }
 }
