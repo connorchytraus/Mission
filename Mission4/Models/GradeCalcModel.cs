@@ -10,21 +10,21 @@ namespace Mission4.Models
     {
         [Required]
         [Range(0,100)]
-        public Int32 assi { get; set; }
+        public float assi { get; set; }
         [Required]
         [Range(0, 100)]
-        public Int32 grou { get; set; }
+        public float grou { get; set; }
         [Required]
         [Range(0, 100)]
-        public Int32 quiz { get; set; }
+        public float quiz { get; set; }
         [Required]
         [Range(0, 100)]
-        public Int32 midt { get; set; }
+        public float midt { get; set; }
         [Required]
         [Range(0, 100)]
-        public Int32 fina { get; set; }
+        public float fina { get; set; }
         [Required]
         [Range(0, 100)]
-        public Int32 inte { get; set; }
+        public float inte { get; set; }
     }
 }

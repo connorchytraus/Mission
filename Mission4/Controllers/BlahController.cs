@@ -23,7 +23,7 @@ namespace Mission4.Controllers
         [HttpPost]
         public IActionResult GradCalc(GradeCalcModel model)
         {
-            return View();
+            return View(model);
         }
     }
 }
