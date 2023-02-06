@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Mission4.Views.blah
+namespace Mission.Views.blah
 {
     public class IndexModel : PageModel
     {
