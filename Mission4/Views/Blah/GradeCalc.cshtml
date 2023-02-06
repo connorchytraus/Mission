@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+@model GradeCalcModel;
+
+<!-- grade calculator here sends info over to Grades.js-->
+<div class="container-md">
+    <h2 class="row justify-content-center">Grade Calculator</h2>
+    <p class="text-md-center">Enter Grades as a % (75% would be entered as 75)</p>
+    <div class="container-sm text-center">
+        <div class="form-group">
+            <form method="post">
+                <label class="col-form-label">50% Assignments:</label>
+                <input id="assignment" asp-for="assi" placeholder="%" /><br />
+                <label class="col-form-label">10% Group Project:</label>
+                <input id="group" asp-for="grou" placeholder="%" /><br />
+                <label class="col-form-label">10% Quizzes:</label>
+                <input id="quiz" asp-for="quiz" placeholder="%" /><br />
+                <label class="col-form-label">10% Midterm Exam:</label>
+                <input id="mid" asp-for="midt" placeholder="%" /><br />
+                <label class="col-form-label">10% Final Exam:</label>
+                <input id="final" asp-for="fina" placeholder="%" /><br />
+                <label class="col-form-label">10% INTEX:</label>
+                <input id="intex" asp-for="inte" placeholder="%" /><br />
+                <br />
+                <input id="buttonCalc" type="submit" class="btn btn-primary" value="Calculate Grade" />
+                <br />
+                <output id="grade">Final Grade: </output>
+                <br />
+                <br />
+                <div asp-validation-summary="All"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- bootstrap and jquery files -->
+<script src="js/Grades.js"></script>
